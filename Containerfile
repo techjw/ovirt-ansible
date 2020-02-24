@@ -1,18 +1,20 @@
 # oVirt Ansible utility container
 #
-# VERSION   0.1
+# VERSION   0.2
 
 FROM fedora:31
 
 LABEL maintainer.name="James Walton" \
       maintainer.email="jfw@redhat.com" \
       description="Utility container for oVirt Ansible playbooks" \
-      version="0.1"
+      version="0.2"
 
 RUN dnf -y update && \
     dnf -y install \
     bind-utils \
     iputils \
+    openssh \
+    openssh-clients \
     gcc \
     libxml2-devel \
     python3-devel \
