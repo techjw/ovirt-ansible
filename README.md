@@ -7,7 +7,7 @@ Container image for working with oVirt Ansible playbooks
 `podman build -t ovirt-ansible:latest .`
 
 ### Pull ovirt-ansible
-`podman image pull quay.io/`
+`podman image pull quay.io/techjw/ovirt-ansible`
 
 ### Usage
 `podman run -it ovirt-ansible:latest`
